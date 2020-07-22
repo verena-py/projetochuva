@@ -18,6 +18,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Pipenv (projetochuva)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="dados" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

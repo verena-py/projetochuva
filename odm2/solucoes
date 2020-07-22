@@ -1,0 +1,34 @@
+xlocationunitsid = models.ForeignKey('Units', verbose_name="x location units",
+                                         related_name='relatedXLocationUnitsid', models.DO_NOTHING,
+                                         db_column='XLocationUnitsID', blank=True, null=True, on_delete=models.CASCADE)
+
+ylocationunitsid = models.ForeignKey('Units', verbose_name="y location units",
+                                         related_name='relatedYLocationUnitsid', models.DO_NOTHING,
+                                         db_column='YLocationUnitsID', blank=True, null=True, on_delete=models.CASCADE)
+zlocationunitsid = models.ForeignKey('Units', verbose_name="z location units",
+                                         related_name='relatedZLocationUnitsid', models.DO_NOTHING,
+                                         db_column='ZLocationUnitsID', blank=True, null=True, on_delete=models.CASCADE)
+
+intendedtimespacingunitsid = models.ForeignKey('Units', verbose_name="intended time spacing units", related_name='relatedIntendedTimeSpacingUnitsid',
+                                                   models.DO_NOTHING, db_column='IntendedTimeSpacingUnitsID', blank=True, null=True, on_delete=models.CASCADE)
+
+intendedzspacingunitsid = models.ForeignKey('Units', verbose_name="intended z spacing units",
+                                                   related_name='relatedIntendedZSpacingUnitsid',
+                                                   models.DO_NOTHING, db_column='IntendedZTimeSpacingUnitsID',
+                                                   blank=True, null=True, on_delete=models.CASCADE)
+timeaggregationintervalunitsid = models.ForeignKey('Units',verbose_name="time aggregation interval units", related_name='relatedTimeAggregationIntervalUnitsid',
+                                                       models.DO_NOTHING, db_column='TimeAggregationIntervalUnitsID',blank=True, null=True, on_delete=models.CASCADE)  # Field name made lowercase.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
