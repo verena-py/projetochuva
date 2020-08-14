@@ -3,43 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'fa/all.min.css' %}">
-    <script src="{% static 'bootstrap.min.js' %}"></script>
-    <title>Projeto Chuva</title>
-</head>
-
+{% include 'parciais/bootstrap.html'%}
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Página Inicial</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ferramentas</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisa</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
+     <div class="container">
         <div class="jumbotron">
             <h1 class="display-4">Projeto Chuva <i class="fas fa-cloud-rain"></i></h1>
             <p class="lead"> Esse serviço web foi pensado exclusivamente na análise de dados de precipitação
@@ -47,7 +13,7 @@
             <hr class="my-4">
             <p>Projeto desenvolvido para o Programa Institucional de Bolsas de Iniciação Científica (PIBIC)
                 pela bolsista Verena Meirelles, com orientação do Prof. Dr. Chistopher Freire.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Saber mais</a>
+
         </div>
     </div>
 
@@ -56,46 +22,20 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title"> Sobre o projeto</h5>
-                        <p class="card-text">Saiba mais sobre dados de precipitação, características da bacia estudada e estudos realizados para o desenvolvimento do projeto.</p>
-                        <a href="#" class="btn btn-primary">Clique aqui!</a>
+                        <h5 class="card-title"> Precipitação anual</h5>
+                        <p class="card-text">Visualize a precipitação anual da Bacia do Piaui em AL, imagem gerada pelo software QGIS.</p>
+                        <a href='{% url 'anual' %}' class="btn btn-primary">Clique aqui!</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Ferramentas</h5>
-                        <p class="card-text">Visualize os dados da Região Hidrogŕafica do Piaui (AL), e faça as análises.</p>
-                        <a href="#" class="btn btn-primary">Clique aqui!</a>
+                        <h5 class="card-title"> Estatística </h5>
+                        <p class="card-text">Pensando na caracterização, foi gerada uma média dos dados da bacia em estudo.</p>
+                        <a href='{% url 'media' %}' class="btn btn-primary">Clique aqui!</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-6">
-                <h2>Sign-in</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
             </div>
         </div>
     </div>

@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'piaui',
-    'odm2',
+    'odm2.apps.Odm2Config',
 ]
 
 MIDDLEWARE = [

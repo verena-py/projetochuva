@@ -15,16 +15,3 @@ for model in app_models:
 #print(list)
 
 
-#Actions -Actions are performed by people and may have a result.
-#Datasets - Enables grouping of results into a larger dataset.
-#FeatureActions - Provides flexible linkage between Actions and the SamplingFeatures on which or at which they were performed.
-#Methods - The procedure used to perform an action.
-#Organizations - A group of people.
-#People - Individuals that perform actions.
-#Processing Levels - Levels to which data have been quality controlled.
-#Related Actions - Enables specifying relationships among Actions (e.g., workflows, etc.)
-#Results - The result of an action.
-#Sampling Features - Where or on what an action was performed.
-#Taxonomic Classifiers - Terms for classifying results.
-#Units - Units of measure.
-#Variables - What was observed.

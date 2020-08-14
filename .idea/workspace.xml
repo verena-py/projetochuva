@@ -2,24 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4dabfe9-4411-44a7-91cb-eb435d15ba7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ODM2_for_SQLite.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/erros2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/erros3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/modelo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/solucoes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odm2/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projetochuva.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projetochuva.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/odm2/templates/odm2/anual.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/odm2/templates/odm2/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/odm2/templates/odm2/media.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/parciais/bootstrap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados/chuvas_C_01036005_2.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odm2/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/odm2/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odm2/erros2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odm2/erros3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odm2/modelo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odm2/solucoes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odm2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/odm2/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odm2/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/odm2/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/piaui/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/piaui/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/piaui/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/piaui/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/piaui/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/piaui/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/piaui/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/piaui/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/projetochuva/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projetochuva/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projetochuva/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projetochuva/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
@@ -35,8 +39,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -54,12 +71,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/PESQUISA/dados" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HidroComp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,6 +96,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Django Server.projetochuva">
+    <configuration name="estatistica" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="projetochuva" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odm2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/odm2/estatistica.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="projetochuva" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,6 +132,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="media" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="projetochuva" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odm2/hydro_api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/odm2/hydro_api/media.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,10 +188,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.estatistica" />
+        <item itemvalue="Python.media" />
         <item itemvalue="Python.manage" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -161,12 +226,22 @@
       <workItem from="1594733791735" duration="10435000" />
       <workItem from="1594894405668" duration="19881000" />
       <workItem from="1595272128159" duration="8901000" />
-      <workItem from="1595422544918" duration="2444000" />
+      <workItem from="1595422544918" duration="5219000" />
+      <workItem from="1595804785648" duration="1923000" />
+      <workItem from="1595961935052" duration="930000" />
+      <workItem from="1595975529529" duration="812000" />
+      <workItem from="1596062221828" duration="1411000" />
+      <workItem from="1596594995133" duration="2634000" />
+      <workItem from="1596736159707" duration="3758000" />
+      <workItem from="1597063764079" duration="21018000" />
+      <workItem from="1597269762509" duration="2966000" />
+      <workItem from="1597319244535" duration="6024000" />
+      <workItem from="1597411707647" duration="2105000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -180,14 +255,18 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="439" y="198" width="651" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1594926394104" />
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597094964470">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1597094964470" />
     <state x="378" y="27" width="666" height="741" key="#manage" timestamp="1593459338120">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="378" y="27" width="666" height="741" key="#manage/67.27.1299.741@67.27.1299.741" timestamp="1593459338120" />
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595427928480">
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1597324262949">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1595427928480" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1597324262949" />
     <state width="1253" height="219" key="GridCell.Tab.-1.bottom" timestamp="1594559289324">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -204,22 +283,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="1253" height="219" key="GridCell.Tab.-1.right/67.27.1299.741@67.27.1299.741" timestamp="1594559289323" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1595460765416">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1597375103649">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1595460765416" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1595460765415">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1597375103649" />
+    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1597375103648">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1595460765415" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1595460765414">
+    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1597375103648" />
+    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1597375103648">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1595460765414" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1595460765416">
+    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1597375103648" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1597375103649">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1595460765416" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1597375103649" />
     <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1594559237222">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -244,10 +323,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="506" y="258" width="400" height="277" key="scopes/67.27.1299.741@67.27.1299.741" timestamp="1594927306643" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1594741616880">
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597173893149">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1594741616880" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1597173893149" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,6 +340,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/projetochuva$estatistica.coverage" NAME="estatistica Coverage Results" MODIFIED="1597178312344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/odm2" />
+    <SUITE FILE_PATH="coverage/projetochuva$media.coverage" NAME="media Coverage Results" MODIFIED="1597173622196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/odm2/hydro_api" />
     <SUITE FILE_PATH="coverage/projetochuva$manage.coverage" NAME="manage Coverage Results" MODIFIED="1593460712052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
