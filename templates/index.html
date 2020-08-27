@@ -7,11 +7,10 @@
 <body>
      <div class="container">
         <div class="jumbotron">
-            <h1 class="display-4">Projeto Chuva <i class="fas fa-cloud-rain"></i></h1>
-            <p class="lead"> Esse serviço web foi pensado exclusivamente na análise de dados de precipitação
-                da bacia do Rio Piaui, localizada no sul de Alagoas.</p>
+            <h1 class="display-4"><p class="text-center">Projeto Chuva <i class="fas fa-cloud-rain"></i></p></h1>
+            <p class="lead"><p class="text-center"> Esse ferramenta web tem como objetivo análisar os dados de precipitação da bacia hidrográfica do Rio Piaui,AL.</p></p>
             <hr class="my-4">
-            <p>Projeto desenvolvido para o Programa Institucional de Bolsas de Iniciação Científica (PIBIC)
+            <p class="text-center">Projeto desenvolvido para o Programa Institucional de Bolsas de Iniciação Científica (PIBIC)
                 pela bolsista Verena Meirelles, com orientação do Prof. Dr. Chistopher Freire.</p>
 
         </div>
@@ -22,18 +21,18 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title"> Precipitação anual</h5>
-                        <p class="card-text">Visualize a precipitação anual da Bacia do Piaui em AL, imagem gerada pelo software QGIS.</p>
-                        <a href='{% url 'anual' %}' class="btn btn-primary">Clique aqui!</a>
+                        <h5 class="card-title"> Análise dos dados</h5>
+                        <p class="card-text"> Disponível consultas pré definidas ao banco de dados</p>
+                        <a href='{% url 'consulta' %}' class="btn btn-primary">Consultar</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-#6">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title"> Estatística </h5>
-                        <p class="card-text">Pensando na caracterização, foi gerada uma média dos dados da bacia em estudo.</p>
-                        <a href='{% url 'media' %}' class="btn btn-primary">Clique aqui!</a>
+                        <h5 class="card-title"> Dados </h5>
+                        <p class="card-text">Esse link foi usado como ferramenta para preenchimento dos dados.</p>
+                        <a href='{% url 'dados' %}' class="btn btn-primary">Dados</a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,80 @@
+    result = Timeseriesresults.objects.get(pk=2)#esse
+    censor = CvCensorcode.objects.get(name='Unknown')
+    quality = CvQualitycode.objects.get(name='Unknown')
+    units_time = Units.objects.get(pk=1)
+    time_inter = 1
+    value_utc = 1
+    source = Organizations.objects.get(pk=1)
+    station = result.resultid.featureactionid.samplingfeatureid.samplingfeaturename
+
+    rain = SerieTemporal(code='1036008', type_data='2')
+    df = pd.DataFrame(rain.data)
+    df = df.reset_index()
+    df.drop_duplicates(df.columns[df.columns.isin(["Date"])], keep="last",inplace=True)
+    df = df.reset_index()
+    df = df.drop(['index','Consistence'], axis=1)
+    df = df.set_index('Date')
+    dados = df
+    time_serie_result_list = []
+
+    for i in dados.index:
+        obj_ts = Timeseriesresultvalues(resultid=result, censorcodecv=censor,
+                                        qualitycodecv=quality, valuedatetimeutcoffset=value_utc,
+                                        timeaggregationinterval=time_inter,
+                                        timeaggregationintervalunitsid=units_time,
+                                        valuedatetime=i.to_pydatetime(),
+                                        datavalue=dados[dados.columns.values[0]][i])
+        time_serie_result_list.append(obj_ts)
+    Timeseriesresultvalues.objects.bulk_create(time_serie_result_list)
+
+
+
+
+    trace1 = go.Scatter(x=df1['Date'],
+                        y=df1['Data'],
+                        mode='lines',
+                        name='1036050')
+    trace2 = go.Scatter(x=df2['Date'],
+                        y=df2['Data'],
+                        mode='lines',
+                        name='1036008')
+    trace3 = go.Scatter(x=df3['Date'],
+                        y=df3['Data'],
+                        mode='lines',
+                        name='1036007')
+    trace5 = go.Scatter(x=df5['Data'],
+                        y=df5['Date'],
+                        mode='lines',
+                        name='1036064')
+    grafico = [trace5]
+
+    layout = go.Layout(title='Dados de chuva nas estações de Piaçabuçu',
+                       yaxis={'title': 'Tempo'},
+                       xaxis={'title': 'Dados'})
+    fig = go.Figure(data=grafico, layout=layout)
+    pyo.plot(fig, filename="odm2/graficopiacabucu.html")
+
+
+
+    #pyo.plot(grafico, filename="odm2/graficopiacabucu.html")
+
+    #py.plot(grafico)
+
+    #layout = go.Layout(title='Dados de chuva nas estações de Piaçabuçu',
+    #                   yaxis={'title': 'Tempo'},
+    #                   xaxis={'title': 'Dados'})
+    #fig = go.Figure(data=grafico, layout=layout)
+    #
+    #pyo.plot(fig, filename="odm2/graficopiacabucu.html")
+
+
+
+    data_frames = [df1, df2, df3, df5]
+    df_merged = reduce(lambda left, right: pd.merge(left, right, on=['Date'],
+                                                    how='outer'), data_frames)
+    df_merged = df_merged.sort_values(by='Date')
+    df_merged = df_merged.reset_index(drop=True)
+    df_merged['Date'] = pd.to_datetime(df_merged['Date'], infer_datetime_format=True)
+    fig = df_merged.plot()
+    fig.show()
+    pyo.plot(fig, filename="odm2/graficopiacabucu.html")

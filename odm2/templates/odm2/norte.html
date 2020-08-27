@@ -1,0 +1,53 @@
+{%  extends 'parciais/bootstrap.html' %}
+{% block conteudo %}
+<body>
+
+     <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4"><p class="text-center">Gráfico de chuvas registradas, nas estações localizadas no norte da Bacia.</p></h1>
+            <p class="lead"><p class="text-center"> O gráfico interativo para verificar os dados em relação ao tempo, foi gerado e encontra-se em outra aba do seu servidor em um arquivo .html</p></p>
+        </div>
+        <div class="jumbotron">
+            <p class="lead"><p class="text-center">Em relação a região sul da bacia hidrográfica, a região norte apresenta uma maior precariedade dos dados,
+                                                    conforme a tabela abaixo, a única estação com um grande volume de dados ainda não contêm dados recentes,
+                                                    No período em que pode ocorrer comparação de uma região para outra (ano de 2000), ambas apresentaram o mesmo padrão de grandes chuvas em meados de março.</p></p>
+        </div>
+
+           </div>
+                <table class="table table-striped" align=center>
+                  <thead>
+                    <tr>
+                      <th scope="col"> </th>
+                      <th scope="col">Estações</th>
+                      <th scope="col"> Período que contém dados </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"> </th>
+                      <th scope="row">936066</th>
+                      <td>1963-1991</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> </th>
+                      <th scope="row">936065</th>
+                      <td>1961-1962</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> </th>
+                      <th scope="row">936022</th>
+                      <td>1920-2000</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+{% endblock %}

@@ -1,7 +1,58 @@
-{%  extends 'parciais/bootstrap.html' %}
+{% include 'parciais/bootstrap.html'%}
+
 {% block conteudo %}
-    <img src="baciadopiaui.png" alt="baciadopiaui.png" class="img-thumbnail">
+
+<body>
+
+     <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4"><p class="text-center">Projeto Chuva</p></h1>
+            <p class="lead"><p class="text-center">Tem como objetivo, agir como uma ferramenta para análises e uma melhor caracterização da Bacia Hidrográgica do Rio Piauí, Alagoas.</p></p>
+        </div>
+           </div>
+                <table class="table table-striped"">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Configurações do projeto</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Linguagem Python</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Framework web utilizado: Django</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Bibliotecas principais: Pandas, HidroComp, HidroPythonAPI, Plotly, Bootstrap</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td> Desenvolvido pelo software Pycharm</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td> Modelo de banco de dados: Observations Data Models 2 (ODM2)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Banco de dados baseado SQL, implementado pela bilioteca SQLite</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Documentações de referência: django.org; odm2.org.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+        </div>
+</body>
+
+</html>
+
 
 {% endblock %}
-
-
